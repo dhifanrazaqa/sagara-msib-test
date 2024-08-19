@@ -1,0 +1,217 @@
+{
+    "info": {
+        "_postman_id": "fccd3e94-2dd9-48e4-a951-c5d2ae78ccc9",
+        "name": "Sagara",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "get all clothing",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "create clothing",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"title\": \"Kaos Metal\",\n  \"color\": \"Hijau\",\n  \"size\": \"M\",\n  \"price\": 20000,\n  \"stock\": 26\n}"
+                }
+            }
+        },
+        {
+            "name": "get clothing by id",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/0b8e645c-4752-40e9-be19-b8a04f095f61",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "0b8e645c-4752-40e9-be19-b8a04f095f61"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update clothing",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/a711bd9c-fcf8-4dea-ad50-25a2144454ab",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "a711bd9c-fcf8-4dea-ad50-25a2144454ab"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "delete clothing",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/0b8e645c-4752-40e9-be19-b8a04f095f61",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "0b8e645c-4752-40e9-be19-b8a04f095f61"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "add stock",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/add-stock/3e69f4b8-5a4e-43b4-8da0-943195ede42a",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "add-stock",
+                        "3e69f4b8-5a4e-43b4-8da0-943195ede42a"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"num\": 20\n}"
+                }
+            }
+        },
+        {
+            "name": "reduce stock",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/reduce-stock/3e69f4b8-5a4e-43b4-8da0-943195ede42a",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "reduce-stock",
+                        "3e69f4b8-5a4e-43b4-8da0-943195ede42a"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"quantity\": 1\n}"
+                }
+            }
+        },
+        {
+            "name": "get out of stock",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/out-of-stock",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "out-of-stock"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get low stock",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/clothing/below-five-stock",
+                    "path": [
+                        "api",
+                        "v1",
+                        "clothing",
+                        "below-five-stock"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Sagara",
+    "collectionId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+    "dateExported": "2024-08-19T22:38:57.594Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fa317889-e626-4c7b-afae-eb5f2e0d6d6a",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "get all clothing",
+            "url": "http://localhost:5000/api/v1/clothing",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-19T14:47:40.556Z",
+            "modified": "2024-08-19T17:36:43.479Z",
+            "headers": []
+        },
+        {
+            "_id": "4d653da5-2e16-4308-8f76-ca21c3938057",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "create clothing",
+            "url": "http://localhost:5000/api/v1/clothing",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-19T14:47:57.468Z",
+            "modified": "2024-08-19T17:06:32.345Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Kaos Metal\",\n  \"color\": \"Hijau\",\n  \"size\": \"M\",\n  \"price\": 20000,\n  \"stock\": 26\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6d01d81c-ea24-4c71-a5c6-fe910096dd28",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "get clothing by id",
+            "url": "http://localhost:5000/api/v1/clothing/0b8e645c-4752-40e9-be19-b8a04f095f61",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-08-19T14:48:19.808Z",
+            "modified": "2024-08-19T17:05:25.342Z",
+            "headers": []
+        },
+        {
+            "_id": "befb76be-52b7-4513-9cfd-2af438e9bac2",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "update clothing",
+            "url": "http://localhost:5000/api/v1/clothing/a711bd9c-fcf8-4dea-ad50-25a2144454ab",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-08-19T14:57:46.055Z",
+            "modified": "2024-08-19T17:28:01.867Z",
+            "headers": []
+        },
+        {
+            "_id": "749809d4-ca71-46e2-bccc-4e9f15e712b9",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "delete clothing",
+            "url": "http://localhost:5000/api/v1/clothing/0b8e645c-4752-40e9-be19-b8a04f095f61",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-08-19T15:21:47.033Z",
+            "modified": "2024-08-19T17:06:09.018Z",
+            "headers": []
+        },
+        {
+            "_id": "7967ec47-e49e-429f-a04a-9b1fcae5e823",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "add stock",
+            "url": "http://localhost:5000/api/v1/clothing/add-stock/3e69f4b8-5a4e-43b4-8da0-943195ede42a",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-08-19T15:23:50.491Z",
+            "modified": "2024-08-19T17:06:50.215Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"num\": 20\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c7397b76-dff0-4c7c-8da1-1f6099e855d9",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "reduce stock",
+            "url": "http://localhost:5000/api/v1/clothing/reduce-stock/3e69f4b8-5a4e-43b4-8da0-943195ede42a",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-08-19T15:40:17.472Z",
+            "modified": "2024-08-19T17:34:50.461Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"quantity\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b221bdb4-1658-4741-b80d-383d5a3d4bff",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "get out of stock",
+            "url": "http://localhost:5000/api/v1/clothing/out-of-stock",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-08-19T16:38:58.770Z",
+            "modified": "2024-08-19T16:39:47.628Z",
+            "headers": []
+        },
+        {
+            "_id": "57b33e5d-d3f2-4459-8893-f2cfc6fb08e4",
+            "colId": "1acc05f0-9df4-4a1a-9fe5-d302c6db9936",
+            "containerId": "",
+            "name": "get low stock",
+            "url": "http://localhost:5000/api/v1/clothing/below-five-stock",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-08-19T16:39:07.662Z",
+            "modified": "2024-08-19T16:41:23.956Z",
+            "headers": []
+        }
+    ],
+    "ref": "c4TfFsnFhK2YRhfjv91FhhKgChd9JJoABQk6nQJZ3-Rh3eCCMpKUMpsCjSL2LCjZWy3nbg8c0NEkT0xZGwqJDA"
+}
