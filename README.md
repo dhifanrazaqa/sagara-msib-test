@@ -21,38 +21,46 @@ List Endpoint:
     "size": "M",  
     "price": 20000,  
     "stock": 26  
-  }  
+  }
+  
 - **Get Single Clothing**
   endpoint: http://localhost:5000/api/v1/clothing/:id  
-  method: GET  
+  method: GET
+  
 - **Update Clothing**  
   endpoint: http://localhost:5000/api/v1/clothing/:id  
   method: PUT  
-  body: Lampirkan field apapun (boleh satu atau lebih)  
+  body: Lampirkan field apapun (boleh satu atau lebih)
+  
 - **Delete Clothing**  
   endpoint: http://localhost:5000/api/v1/clothing/:id  
-  method: DELETE  
+  method: DELETE
+  
 - **Get All Clothing**  
   endpoint: http://localhost:5000/api/v1/clothing  
       atau  http://localhost:5000/api/v1/clothing?color=hijau  
       atau  http://localhost:5000/api/v1/clothing?size=m  
       atau  http://localhost:5000/api/v1/clothing?color=hij&size=m  
-  method: GET  
+  method: GET
+  
 - **Add Stock**  
   endpoint: http://localhost:5000/api/v1/clothing/add-stock/:id  
   method: POST  
   body: {  
     "quantity": 1  
-  }  
+  }
+  
 - **Reduce Stock**  
   endpoint: http://localhost:5000/api/v1/clothing/reduce-stock/:id  
   method: POST  
   body: {  
     "quantity": 1  
-  }  
+  }
+  
 - **Get Out Of Stock Clothing**  
   endpoint: http://localhost:5000/api/v1/clothing/out-of-stock  
-  method: GET  
+  method: GET
+  
 - **Get Lower than 5 Stock Clothing**  
   endpoint: http://localhost:5000/api/v1/clothing/below-five-stock  
   method: GET  
