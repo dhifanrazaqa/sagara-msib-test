@@ -137,7 +137,7 @@ export class ClothingController {
   ): Promise<void> {
     try {
       const { id } = req.params;
-      const { num } = req.body;
+      const { quantity } = req.body;
 
       const isClothingExist = await this.service.getClothingById(id);
 
@@ -145,7 +145,7 @@ export class ClothingController {
         return next(new CustomError("Clothing not found", 404));
       }
 
-      const clothing = await this.service.addClothingStock(id, num);
+      const clothing = await this.service.addClothingStock(id, quantity);
 
       res.status(200).json({
         status: "success",

@@ -17,9 +17,9 @@ export const updateClothingValidator = [
 ];
 
 export const addStock = [
-  body('quantity').isInt({ min: 0 }).withMessage('Stock must be a non-negative integer'),
+  body('quantity').isInt({ min: 0 }).withMessage('Quantity must be a non-negative integer'),
 ];
 
 export const reduceStock = [
-  body('quantity').isInt({ min: 0 }).withMessage('Stock must be a non-negative integer'),
+  body('quantity').isInt({ min: 0 }).withMessage('Quantity must be a non-negative integer'),
 ];

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { ClothingController } from '../controllers/clothingController';
-import { createClothingValidator, updateClothingValidator } from '../validators/clothingValidator';
+import { addStock, createClothingValidator, reduceStock, updateClothingValidator } from '../validators/clothingValidator';
 import { validateRequest } from '../middleware/validateReques';
 
 export function clothingRoutes(controller: ClothingController): Router {
@@ -12,8 +12,8 @@ export function clothingRoutes(controller: ClothingController): Router {
   router.get('/:id', controller.getClothById.bind(controller));
 
   router.post('/', createClothingValidator, validateRequest, controller.createClothing.bind(controller));
-  router.post('/add-stock/:id', controller.addStock.bind(controller));
-  router.post('/reduce-stock/:id', controller.reduceStock.bind(controller));
+  router.post('/add-stock/:id', addStock, validateRequest, controller.addStock.bind(controller));
+  router.post('/reduce-stock/:id', reduceStock, validateRequest, controller.reduceStock.bind(controller));
   
   router.delete('/:id', controller.deleteClothing.bind(controller));
 
