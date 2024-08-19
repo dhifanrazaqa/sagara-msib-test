@@ -5,9 +5,15 @@ Backend Project-based Test
 **Cara Install & Setup**
 - git clone https://github.com/dhifanrazaqa/sagara-msib-test.git
 - Siapkan file .env
-- npx prisma migrate dev --name init
 - npm install
+- npx prisma migrate dev --name init
+- npm test (jika perlu)
 - npm run dev
+
+**Functional Testing**
+- Testing dilakukan dengan Thunder Client
+- File collection sudah tersedia dan bisa diimport (thunder-collection_Sagara.json)
+- Jika menggunakan postman bisa import file (thunder-collection_Sagara_postman.json)
 
 **Tech Stack: Express TS dan PostgreSQL**
 
