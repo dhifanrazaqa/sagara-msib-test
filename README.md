@@ -12,51 +12,52 @@ Backend Project-based Test
 **Tech Stack: Express TS dan PostgreSQL**
 
 List Endpoint:
-- **Create Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing
-  method: POST
-  body: {
-    "title": "Kaos Metal",
-    "color": "Hijau",
-    "size": "M",
-    "price": 20000,
-    "stock": 26
-  }
+- **Create Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing  
+  method: POST  
+  body: {  
+    "title": "Kaos Metal",  
+    "color": "Hijau",  
+    "size": "M",  
+    "price": 20000,  
+    "stock": 26  
+  }  
 - **Get Single Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing/:id
-  method: GET
-- **Update Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing/:id
-  method: PUT
-  body: Lampirkan field apapun (boleh satu atau lebih)
-- **Delete Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing/:id
-  method: DELETE
-- **Get All Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing
-      atau  http://localhost:5000/api/v1/clothing?color=hijau
-      atau  http://localhost:5000/api/v1/clothing?size=m
-      atau  http://localhost:5000/api/v1/clothing?color=hij&size=m
-  method: GET
-- **Add Stock**
-  endpoint: http://localhost:5000/api/v1/clothing/add-stock/:id
-  method: POST
-  body: {
-    "quantity": 1
-  }
-- **Reduce Stock**
-  endpoint: http://localhost:5000/api/v1/clothing/reduce-stock/:id
-  method: POST
-  body: {
-    "quantity": 1
-  }
-- **Get Out Of Stock Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing/out-of-stock
-  method: GET
-- **Get Lower than 5 Stock Clothing**
-  endpoint: http://localhost:5000/api/v1/clothing/below-five-stock
-  method: GET
+  endpoint: http://localhost:5000/api/v1/clothing/:id  
+  method: GET  
+- **Update Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing/:id  
+  method: PUT  
+  body: Lampirkan field apapun (boleh satu atau lebih)  
+- **Delete Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing/:id  
+  method: DELETE  
+- **Get All Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing  
+      atau  http://localhost:5000/api/v1/clothing?color=hijau  
+      atau  http://localhost:5000/api/v1/clothing?size=m  
+      atau  http://localhost:5000/api/v1/clothing?color=hij&size=m  
+  method: GET  
+- **Add Stock**  
+  endpoint: http://localhost:5000/api/v1/clothing/add-stock/:id  
+  method: POST  
+  body: {  
+    "quantity": 1  
+  }  
+- **Reduce Stock**  
+  endpoint: http://localhost:5000/api/v1/clothing/reduce-stock/:id  
+  method: POST  
+  body: {  
+    "quantity": 1  
+  }  
+- **Get Out Of Stock Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing/out-of-stock  
+  method: GET  
+- **Get Lower than 5 Stock Clothing**  
+  endpoint: http://localhost:5000/api/v1/clothing/below-five-stock  
+  method: GET  
 
+# Ketentuan
 Deskripsi
 Anda diminta untuk mengembangkan backend untuk sistem manajemen inventaris sebuah toko baju. Sistem ini harus dapat menangani pembaruan stok baju, penambahan baju baru, dan pencarian baju berdasarkan warna dan ukuran.
 
